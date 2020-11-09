@@ -1,0 +1,15 @@
+.footer-bg {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 15px 0;
+    color: #fff;
+    width: 100%;
+    background: rgba($color: #000000, $alpha: 0.2);
+    text-align: right;
+    & p {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+}
+

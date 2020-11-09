@@ -1,0 +1,36 @@
+.language {
+    &-block {
+        position: relative;
+    }
+    &-block::before {
+        content: '';
+        width: 2px;
+        height: 18px;
+        background-color: white;
+        position: absolute;
+        top: 15%;
+        left: 44%;
+    }
+
+    &-item{
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    &-item:active, &-item:focus {
+        outline: none;
+    }
+
+    &-item + &-item{
+        margin: 5px;
+    }
+    &-active {
+        color: coral;
+    }
+}

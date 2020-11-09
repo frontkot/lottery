@@ -1,0 +1,33 @@
+.item-favorites {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    clip-path: polygon(50% 0%, 65% 30%, 100% 30%, 75% 60%, 85% 100%, 50% 76%, 15% 100%, 25% 60%, 0 30%, 35% 30%);
+}
+
+.modal-icon, .remove-item{
+    cursor: pointer;
+    transform-origin: center;
+    &::before, &::after {
+        display: block;
+        content: '|';
+        position: absolute;
+        font-size: 24px;
+    }
+    &::before {
+        transform: translateX(7px) translateY(-18px) rotateZ(35deg);
+    }
+
+    &::after {
+        transform: translateX(9px) translateY(-17px) rotateZ(123deg);
+    }
+}
+
+.remove-item {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+}
